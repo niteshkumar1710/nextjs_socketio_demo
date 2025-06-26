@@ -1,9 +1,8 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import io from 'socket.io-client';
-
-let socket: any;
+import {io, Socket } from 'socket.io-client';
+let socket: Socket;
 
 export default function HomePage() {
   const [input, setInput] = useState('');
